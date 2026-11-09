@@ -1,3 +1,21 @@
+title {
+    background-color: rgba(104, 28, 5, 0.705);
+    
+}
+body {
+    background-color: rgb(233, 174, 14);
+    padding-top: linear-gradient(to bottom, rgb(233, 174, 14), rgb(216, 58, 10));
+}
 h1 {
-    background-color: #f2f2f2;
+    color: navy;
+    margin-left: 20px;
+}
+a {
+    background-color: rgb(216, 58, 10);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+main {
+    padding: 20px;
 }
