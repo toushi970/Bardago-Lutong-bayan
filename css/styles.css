@@ -35,3 +35,35 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
+a.logo {
+    color:#F8EBDB;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+nav a {
+    color:#F8EBDB;
+    text-decoration: none;
+    font-size: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color:#D99A36;
+}
+.hero {
+    background: linear-gradient(rgba(52,36,36,0.75), rgba(52,36,36,0.75));
+    background-image: url('../Images/food.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+
+    display:flex;
+    align-items:center;
+    color:#F8EBDB;
+    text-align: center;
+}
