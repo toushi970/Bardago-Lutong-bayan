@@ -1,6 +1,37 @@
-img {
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(46, 3, 3, 0.25);   
-     
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Poppins', Arial, sans-serif;
+    background: #F8EBDB;
+    color: #342424;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.site-header {
+    background: linear-gradient(135deg,#782D26,#342424);
+    color:#F8EBDB;
+    padding:15px 0;
+}
+.header-inner {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:15px;
+}
+.logo {
+    width:55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
 }
