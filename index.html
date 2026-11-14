@@ -57,14 +57,79 @@
                 <h3>Tinolang Manok</h3>
                 <p> a warm and comforting chicken soup with vegetables.</p>
                 <h4>Php 120.00</h4>
+            </div>
             <div class="menu-item">
                 <img src="Pancit.jpg" alt="Pancit Guisado">
                 <h3>Pancit Guisado</h3>
                 <p> a flavorful noodle dish with vegetables and meat.</p>
                 <h4>Php 110.00</h4>
+            </div>
+            <div class="menu-item">
+                <img src="Lupia.jpg" alt="Lumpiang Shanghai">
+                <h3>Lumpiang Shanghai</h3>
+                <p> crispy spring rolls filled with minced meat and vegetables.</p>
+                <h4>Php 80.00</h4>
 
-        </section>    
+            </div>
+            <div class="menu-item">
+                <img src="Sisig.jpg" alt="Beef Sisig">
+                <h3>Beef Sisig</h3>
+                <p> a spicy and flavorful dish made with seasoned beef and vegetables.</p>
+                <h4>Php 150.00</h4>
+            </div>
+            <div class="menu-item">
+                <img src="Kare-Kare.jpg" alt="Kare-Kare">
+                <h3>Kare-Kare</h3>
+                <p> a rich and creamy peanut sauce stew with oxtail and vegetables.</p>
+                <h4>Php 200.00</h4>
+            <div class="menu-item">
+                <img src="Lechon.jpg" alt="Lechon Manok">
+                <h3>Lechon Manok</h3>
+                <p> a flavorful roasted chicken dish.</p>
+                <h4>Php 220.00</h4>      
+            </div>
+        </section>
+        <section id="order">
+            <div class="container">
+                <h2>Order Now</h2>
+                <p>Place your order and enjoy our delicious Filipino meals at home.</p>
+                <form>
+                    <label for="customer-name">Full Name:</label>
+                    <input type="text" id="customer-name" name="customer-name" placeholder="Enter your full name" required>
+                    <label for="customer-contact">Contact Number:</label>
+                    <input type="tel" id="customer-contact" name="customer-contact" placeholder="Enter your contact number" required>
+                    <label for="food-order">Choose the food you want to order:</label>
+                    <select id="food-order" name="food-order" required>
+                        <option value="">Select a dish</option>
+                        <option value="adobo">Adobong Manok</option>
+                        <option value="tinola">Tinolang Manok</option>
+                        <option value="pancit">Pancit Guisado</option>
+                        <option value="lumpia">Lumpiang Shanghai</option>
+                        <option value="sisig">Beef Sisig</option>
+                        <option value="kare-kare">Kare-Kare</option>
+                        <option value="lechon">Lechon Manok</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+                    <label for="order-notes">Additional Notes:</label>
+                    <textarea id="order-notes" name="order-notes" placeholder="Enter any additional notes or special requests"></textarea>
+                    <button type="submit">Place Order</button>
+                </form>
+        </section> 
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? Reach out to us!</p>
+                <p>Email: lutongbayan@gmail.com</p>
+                <p>Phone: (63) 963 236 6614</p>
+                <h3>Restaurant Information</h3>
+                <p>Address: Purok 1, Barangay Dologon, Bukidnon, Philippines</p>
+                <p>Operating Hours: Monday to Saturday, 10:00 AM - 8:00 PM</p>
+                <h3>Send us a Message</h3>
+            </div>
+        </section>
     </main>
+
 </body>
 
 </html>
