@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lutong Bayan | Filipino Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container header-inner">
         <img src="Images/food.png" alt="food image" class="logo">
-            <a href="#home" class="logo">Lutong Bayan</a>
+            <a href="#home" class="brand">Lutong Bayan</a>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About us</a>
@@ -28,16 +31,17 @@
             <div class="container hero-inner">
                 <h2>Welcome to Lutong Bayan</h2>
                 <h1>Lasang Bahay<br>Sarap ng Bayan.</h1>
-                <p>Experience the taste of authentic Filipino cuisine.Affordable, Home cooked Filipino meals for lunch and dinner and sharing with the whole household</p>
-                <a href="#menu" class=order-button">Explore Our Menu</a>
+                <p>Experience the taste of authentic Filipino cuisine. Affordable, Home cooked Filipino meals for lunch and dinner and sharing with the whole household</p>
+                <a href="#menu" class="order-button">Explore Our Menu</a>
             </div>
+        </section>
         <section id="about">
             <div class="container">
                 <h2>About Us</h2>
                     <p>Lutong Bayan is a Filipino restaurant that serves delicious, affordable, and traditional Filipino meals. We believe that every dish should bring the familiar taste and comfort of home.</p>
                     <p>Our goal is to provide satisfying meals while celebrating Filipino food and culture.</p>
                     <h3>Our Mission</h3>
-                    <p>To become a trusted Filipino restaurant known for for authentic home-cooked meals and excelent service.</p>  
+                    <p>To become a trusted Filipino restaurant known for authentic home-cooked meals and excellent service.</p>  
             </div>
         </section>
         <section id="menu">
@@ -51,42 +55,43 @@
                     <p> tender chicken cooked in a savory adobo sauce.</p>
                     <h4>Php 100.00</h4>
                 </div>
-            <div class="menu-item">
-                <img src="Images/tinola.jpg" alt="tinolang manok">
-                <h3>Tinolang Manok</h3>
-                <p> a warm and comforting chicken soup with vegetables.</p>
-                <h4>Php 120.00</h4>
-            </div>
-            <div class="menu-item">
-                <img src="Images/pancit.jpg" alt="Pancit Guisado">
-                <h3>Pancit Guisado</h3>
-                <p> a flavorful noodle dish with vegetables and meat.</p>
-                <h4>Php 110.00</h4>
-            </div>
-            <div class="menu-item">
-                <img src="Images/lumpia.jpg" alt="Lumpiang Shanghai">
-                <h3>Lumpiang Shanghai</h3>
-                <p> crispy spring rolls filled with minced meat and vegetables.</p>
-                <h4>Php 80.00</h4>
+                <div class="menu-item">
+                    <img src="Images/tinola.jpg" alt="tinolang manok">
+                    <h3>Tinolang Manok</h3>
+                    <p> a warm and comforting chicken soup with vegetables.</p>
+                    <h4>Php 120.00</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/pancit.jpg" alt="Pancit Guisado">
+                    <h3>Pancit Guisado</h3>
+                    <p> a flavorful noodle dish with vegetables and meat.</p>
+                    <h4>Php 110.00</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/lumpia.jpg" alt="Lumpiang Shanghai">
+                    <h3>Lumpiang Shanghai</h3>
+                    <p> crispy spring rolls filled with minced meat and vegetables.</p>
+                    <h4>Php 80.00</h4>
 
-            </div>
-            <div class="menu-item">
-                <img src="Images/sisig.jpg" alt="Beef Sisig">
-                <h3>Beef Sisig</h3>
-                <p> a spicy and flavorful dish made with seasoned beef and vegetables.</p>
-                <h4>Php 150.00</h4>
-            </div>
-            <div class="menu-item">
-                <img src="Images/kare.jpg" alt="Kare-Kare">
-                <h3>Kare-Kare</h3>
-                <p> a rich and creamy peanut sauce stew with oxtail and vegetables.</p>
-                <h4>Php 200.00</h4>
-            </div>
-            <div class="menu-item">
-                <img src="Images/lechon.jpg" alt="Lechon Manok">
-                <h3>Lechon Manok</h3>
-                <p> a flavorful roasted chicken dish.</p>
-                <h4>Php 220.00</h4>      
+                </div>
+                <div class="menu-item">
+                    <img src="Images/sisig.jpg" alt="Beef Sisig">
+                    <h3>Beef Sisig</h3>
+                    <p> a spicy and flavorful dish made with seasoned beef and vegetables.</p>
+                    <h4>Php 150.00</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/kare.jpg" alt="Kare-Kare">
+                    <h3>Kare-Kare</h3>
+                    <p> a rich and creamy peanut sauce stew with oxtail and vegetables.</p>
+                    <h4>Php 200.00</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="Images/lechon.jpg" alt="Lechon Manok">
+                    <h3>Lechon Manok</h3>
+                    <p> a flavorful roasted chicken dish.</p>
+                    <h4>Php 220.00</h4>
+                </div>      
             </div>
         </section>
         <section id="order">
@@ -127,17 +132,18 @@
                 <p>Address: Purok 1, Barangay Dologon, Bukidnon, Philippines</p>
                 <p>Operating Hours: Monday to Saturday, 10:00 AM - 8:00 PM</p>
                 <h3>Send us a Message</h3>
+        
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
     </main>
     <footer>
         <div class="container">

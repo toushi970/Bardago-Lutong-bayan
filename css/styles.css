@@ -25,7 +25,6 @@ body {
 .header-inner {
     display:flex;
     align-items:center;
-    justify-content:space-between;
     flex-wrap:wrap;
     gap:15px;
 }
@@ -35,7 +34,8 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
-a.logo {
+.brand {
+    margin-right: auto;
     color:#F8EBDB;
     text-decoration: none;
     font-size: 24px;
@@ -49,7 +49,7 @@ nav {
 nav a {
     color:#F8EBDB;
     text-decoration: none;
-    font-size: bold;
+    font-weight: 600;
     transition: 0.3s;
 }
 nav a:hover {
@@ -68,17 +68,13 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-inner {
-    padding: 80px 0;
-}
-
 .hero h2 {
     color: #D99A36;
     font-size: 25px;
     margin-bottom: 10px;
 }
 .hero h1 {
-    font-size: 55px;
+    font-size: clamp(34px, 6vw, 55px);
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -103,13 +99,13 @@ nav a:hover {
 
 .order-button:hover {
     background: #782D26;
+    color: #F8EBDB;
     transform: translateY(-3px);
 
 }
 
 section {
     padding: 70px 0;
-    scroll-margin-top: 20px;
 }
 
 section h2 {
@@ -122,8 +118,7 @@ section h2 {
 
 section h3 {
     color: #667A48;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
 }
 section p {
     margin-bottom: 15px;
@@ -134,9 +129,18 @@ section p {
     background: linear-gradient(135deg, #F8EBDB, #EFE0CC);
 
 }
-about .container {
+#about .container {
     max-width: 900px;
 }
+
+#order .container, #contact .container {
+    max-width: 700px;
+}
+
+#contact {
+    background: linear-gradient(135deg, #FFF8EE, #F8EBDB);
+}
+
 
 #menu {
     background: linear-gradient(135deg, #FFF8EE, #F8EBDB);
@@ -184,5 +188,75 @@ about .container {
     background: linear-gradient(135deg, #667A48, #455535);
     color: white;
     text-align: center;
-    
+
 }
+#gallery h2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#gallery .gallery {
+    diplay: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+
+}
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+#contact {
+    background: linear-gradient(135deg, #FFF8EE, #F8EBDB);
+}
+
+#contact .container {
+    max-width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+label {
+    font-weight: bold;
+    color: #342424;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C9B49B;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    background: white;
+
+}
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #D99A36;
+}
+ button {
+    background: linear-gradient(135deg, #782D26, #A34732);
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: printer;
+    transition: 0.3s;
+ }
+ button:hover {
+    background: #667A48;
+
+ }
