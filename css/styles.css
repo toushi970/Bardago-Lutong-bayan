@@ -242,8 +242,19 @@ input:focus, select:focus, textarea:focus {
  }
  button:hover {
     background: #667A48;
-
  }
+.form-message {
+    background: #667A48;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
 footer {
     background: linear-gradient(135deg, #782D26, #342424);
     color: #F8EBDB;

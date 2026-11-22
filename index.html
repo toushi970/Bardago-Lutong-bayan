@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header class="site-header">
         <div class="container header-inner">
@@ -98,7 +100,7 @@
             <div class="container">
                 <h2>Order Now</h2>
                 <p>Place your order and enjoy our delicious Filipino meals at home.</p>
-                <form>
+                <form id="order-form">
                     <label for="customer-name">Full Name:</label>
                     <input type="text" id="customer-name" name="customer-name" placeholder="Enter your full name" required>
                     <label for="customer-contact">Contact Number:</label>
@@ -119,6 +121,7 @@
                     <label for="order-notes">Additional Notes:</label>
                     <textarea id="order-notes" name="order-notes" placeholder="Enter any additional notes or special requests"></textarea>
                     <button type="submit">Place Order</button>
+                    
                 </form>
             </div>
         </section> 
@@ -133,7 +136,7 @@
                 <p>Operating Hours: Monday to Saturday, 10:00 AM - 8:00 PM</p>
                 <h3>Send us a Message</h3>
         
-                <form>
+                <form id="contact-form">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     <label for="email">Your Email:</label>
@@ -153,7 +156,6 @@
 
         </div>
     </footer>
-
 </body>
 
 </html>
