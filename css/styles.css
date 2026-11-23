@@ -61,11 +61,11 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     min-height: 550px;
-
     display:flex;
     align-items:center;
     color:#F8EBDB;
     text-align: center;
+    border-radius: 0% 20px;
 }
 
 .hero h2 {
