@@ -36,13 +36,22 @@
             </div>
         </section>
         <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                    <p>Lutong Bayan is a Filipino restaurant that serves delicious, affordable, and traditional Filipino meals. We believe that every dish should bring the familiar taste and comfort of home.</p>
-                    <p>Our goal is to provide satisfying meals while celebrating Filipino food and culture.</p>
-                    <h3>Our Mission</h3>
-                    <p>To become a trusted Filipino restaurant known for authentic home-cooked meals and excellent service.</p>  
+            <div class="about-bg">
+                <img src="Images/kare.png" alt="png">
+                <img src="Images/couple.jpg" alt="ng">
+                <img src="Images/j.jpg" alt="png">
+                <img src="Images/l.jpg" alt="png">
+                <img src="Images/r.jpg" alt="png">
+                <img src="Images/a.jpg" alt="png" class="collage-wide">
             </div>
+            <div class="container about-content">
+            
+                <h2>About Us</h2>
+                <p>Lutong Bayan is a Filipino restaurant that serves delicious, affordable, and traditional Filipino meals. We believe that every dish should bring the familiar taste and comfort of home.</p>
+                <p>Our goal is to provide satisfying meals while celebrating Filipino food and culture.</p>
+                <h3>Our Mission</h3>
+                <p>To become a trusted Filipino restaurant known for authentic home-cooked meals and excellent service.</p>
+            </div>      
         </section>
         <section id="menu">
             <div class="container">
@@ -98,24 +107,43 @@
             <div class="container">
                 <h2>Order Now</h2>
                 <p>Place your order and enjoy our delicious Filipino meals at home.</p>
-                <form>
+                <form id="order-form" action="#" method="post">
                     <label for="customer-name">Full Name:</label>
                     <input type="text" id="customer-name" name="customer-name" placeholder="Enter your full name" required>
                     <label for="customer-contact">Contact Number:</label>
                     <input type="tel" id="customer-contact" name="customer-contact" placeholder="Enter your contact number" required>
                     <label for="food-order">Choose the food you want to order:</label>
-                    <select id="food-order" name="food-order" required>
-                        <option value="">Select a dish</option>
-                        <option value="adobo">Adobong Manok</option>
-                        <option value="tinola">Tinolang Manok</option>
-                        <option value="pancit">Pancit Guisado</option>
-                        <option value="lumpia">Lumpiang Shanghai</option>
-                        <option value="sisig">Beef Sisig</option>
-                        <option value="kare-kare">Kare-Kare</option>
-                        <option value="lechon">Lechon Manok</option>
-                    </select>
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+                    <fieldset class="dish-list">
+                        <legend>Choose your dishes</legend>
+                        <div class="order-row">
+                            <label for="qty-adobo">Adobong Manok - Php 100.00</label>
+                            <input type="number" id="qty-adobo" name="adobo" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-tinola">Tinolang Manok - Php 120.00</label>
+                            <input type="number" id="qty-tinola" name="tinola" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-pancit">Pancit Guisado - Php 110.00</label>
+                            <input type="number" id="qty-pancit" name="pancit" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-lumpia">Lumpiang Shanghai - Php 80.00</label>
+                            <input type="number" id="qty-lumpia" name="lumpia" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-sisig">Beef Sisig - Php 150.00</label>
+                            <input type="number" id="qty-sisig" name="sisg" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-kare">Kare-kare - Php 200.00</label>
+                            <input type="number" id="qty-kare" name="kare" min="0" value="0">
+                        </div>
+                        <div class="order-row">
+                            <label for="qty-lechon">Lechon Manok - Php 220.00</label>
+                            <input type="number" id="qty-tinola" name="pancit" min="0" value="0">
+                        </div>
+                    </fieldset>
                     <label for="order-notes">Additional Notes:</label>
                     <textarea id="order-notes" name="order-notes" placeholder="Enter any additional notes or special requests"></textarea>
                     <button type="submit">Place Order</button>
@@ -125,15 +153,6 @@
         </section> 
         <section id="contact">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>Have questions or feedback? Reach out to us!</p>
-                <p>Email: lutongbayan@gmail.com</p>
-                <p>Phone: (63) 963 236 6614</p>
-                <h3>Restaurant Information</h3>
-                <p>Address: Purok 1, Barangay Dologon, Bukidnon, Philippines</p>
-                <p>Operating Hours: Monday to Saturday, 10:00 AM - 8:00 PM</p>
-                <h3>Send us a Message</h3>
-        
                 <form id="contact-form">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -147,12 +166,25 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <h3>Lutong Bayan</h3>
-            <p>Lasang Bahay, Sarap ng Bayan</p>
-            <p>&copy; 2026 Lutong Bayan. All rights reserved.</p>
-
+        <div  class="container footer-grid">
+            <div class="container">
+                <h3>Lutong Bayan</h3>
+                <p>Lasang Bahay, Sarap ng Bayan</p>
+            </div>
+            <div>
+                <h3>Contact Information</h3>
+                <p>Email: lutongbayan@gmail.com</p>
+                <p>Phone: (63) 963 236 6614</p>
+                <p>Address: Purok 1, Barangay Dologon, Bukidnon, Philippines</p>
+            </div>
+            <div>
+                <h3>Operating Hours</h3>
+                <p>Monday to Saturday</p>
+                <p>10:00 AM - 8:00 PM</p>
+            </div>
+            
         </div>
+         <p class="copyright">&copy; 2026 Lutong Bayan. All rights reserved.</p>
     </footer>
 </body>
 
